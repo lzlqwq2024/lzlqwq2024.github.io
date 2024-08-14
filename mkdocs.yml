@@ -1,0 +1,59 @@
+site_name: lzlqwq's Note
+site_author: lzlqwq
+
+theme:
+  name: material
+  language: zh
+  features:
+    - search.suggest
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.top
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: 进入暗色模式
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: 进入亮色模式
+plugins:
+  - search
+  - blog:
+      blog_toc: true
+      archive_date_format: MM/yyyy
+  - tags
+nav:
+  - 简介:
+    - index.md
+  - 图论:
+    - 图论/TopoSort.md
+  - 字符串:
+    - 字符串/KMP.md
+  - Blog:
+    - blog/index.md
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+
