@@ -34,6 +34,8 @@ nav:
     - 图论/TopoSort.md
   - 字符串:
     - 字符串/KMP.md
+  - 数学:
+    - 数学/筛法.md
   - Blog:
     - blog/index.md
 
