@@ -26,10 +26,12 @@ plugins:
   - blog:
       blog_toc: true
       archive_date_format: MM/yyyy
-  - tags
+  - tags:
+      tags_file: tags.md
 nav:
   - 简介:
     - index.md
+    - tags.md
   - 图论:
     - 图论/TopoSort.md
   - 字符串:
